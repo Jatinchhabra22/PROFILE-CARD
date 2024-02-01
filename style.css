@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+
+.profile-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    max-width: 370px;
+    width: 100%;
+    border-radius: 24px;
+    padding: 25px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+    position: relative;
+}
+
+.profile-card::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 36%;
+    width: 100%;
+    border-radius: 24px 24px 0 0 ;
+    background-color: #4070f4;
+}
+
+.image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: #4070f4;
+    padding: 3px;
+    margin-bottom: 10px;
+}
+
+.image .profile-image{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;   
+    object-fit: cover;
+    border: 3px solid #fff;
+}
+
+.profile-card .text-data{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+}
+
+.text-data .name{
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.text-data .work{
+    font-size: 20px;
+    font-weight: 350px;
+}
+
+.profile-card .media-buttons{
+    display: flex;
+    align-items: center;
+    margin-top: 15px ;
+}
+
+.media-buttons .link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 18px;
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    margin: 0 8px;
+    background-color: #4070f4;
+    text-decoration: none;
+}
+
+.profile-card .buttons{
+
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.buttons .button{
+    padding: 8px 24px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 24px;
+    color: #fff;
+    background-color: #4070f4;
+    cursor: pointer; 
+    /*The cursor CSS property sets the mouse cursor, if any, to show when the mouse pointer is over an element.*/
+    font-weight: 400;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.buttons .button:hover{
+    background-color: #0e4bf1;
+}
+
+.profile-card .analytics{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.analytics .data{
+    display: flex;
+    align-items: center;
+    color: #333;
+    padding: 0 20px;
+    border-right: 2px solid #e7e7e7; /* right side me ek line type aa jaegi isse */
+}
+
+.data:last-child{
+    border-right: none;
+}
+
+.data i{
+    font-size: 18px;
+    margin-right:  10px;
+}
+
+
+
+
+
